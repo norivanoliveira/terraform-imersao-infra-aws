@@ -15,7 +15,7 @@ provider "aws" {
 
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0022f774911c1d690"
+  ami           = "ami-09d56f8956ab235b3"
   instance_type = "t2.micro"
   key_name = "Iac"
 

@@ -1,0 +1,9 @@
+- hosts: web-server
+  tasks:
+    - name: Criar HTML
+      copy:
+        dest: /home/ubuntu/index.html
+        content: <html><meta charset="UTF-8"></meta><b>Web Server construído com IaC</b></html>
+
+    - name: Criar servidor
+      shell: "nohup busybox httpd -f -p 9090 &"
